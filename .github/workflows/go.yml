@@ -13,10 +13,7 @@ on:
       HELLO_FROM:
         required: true
         description: "HELLO_FROM"
-        default: xyz
-        type: choice
-        options:
-          - "Pramod Yadav"
+        default: Pramod
 
     
 
