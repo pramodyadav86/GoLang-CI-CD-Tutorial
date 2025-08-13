@@ -10,13 +10,13 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
     inputs:
-      HELLO_FROM:
+      HELLO_FROM1:
         required: true
         description: "HELLO_FROM"
         default: Pramod
         type: string
 env:
-  HELLO_FROM: ${{git.event.inputs.HELLO_FROM}}
+  HELLO_FROM: ${{github.event.inputs.HELLO_FROM1}}
     
 
 jobs:
