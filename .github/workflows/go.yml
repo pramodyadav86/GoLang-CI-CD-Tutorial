@@ -14,7 +14,9 @@ on:
         required: true
         description: "HELLO_FROM"
         default: Pramod
-
+        type: string
+env:
+  HELLO_FROM: ${{git.event.inputs.HELLO_FROM}}
     
 
 jobs:
