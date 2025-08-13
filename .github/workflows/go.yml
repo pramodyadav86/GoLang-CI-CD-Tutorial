@@ -10,12 +10,13 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
     inputs:
-      HELLO_FROM:
-      description: "Your name"
-      default: xyz
-      type: choice
-      options:
-        - "Pramod Yadav"
+      env:
+        required: true
+        description: "Your name"
+        default: xyz
+        type: choice
+        options:
+          - "Pramod Yadav"
 
     
 
