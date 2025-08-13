@@ -9,8 +9,16 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
-env:
-HELLO_FROM: "Pramod Yadav"
+    inputs:
+      HELLO_FROM:
+      description: "Your name"
+      default: xyz
+      type: choice
+      options:
+        - "Pramod Yadav"
+
+    
+
 jobs:
 
   build:
